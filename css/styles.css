@@ -1,0 +1,61 @@
+/*navbar styles*/
+.navbar-inverse {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: rgba(0, 0, 0, .75);
+  text-shadow: 2px 2px 2px #000;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  background-color: rgba(0, 0, 0, .25);
+  color: #F8512F; /*base orange*/
+}
+
+/** carousel **/
+.item {
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+}
+
+#wood-bg {
+  background-image: url('../img/wood-2.jpg');
+}
+
+#carousel-logo {
+  height: 200px;
+}
+
+.flex-wrapper {
+  height: 100%;
+  display:flex;
+  align-items: center;
+}
+
+#seating-bg {
+  background-image: url('../img/restaurant-2.jpg');
+}
+
+.carousel-caption{
+  padding-bottom: 10em;
+}
+
+.btn-warning {
+  background-color: #F8512F;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #D34326;
+}
+
+#farm-bg {
+  background-image: url('../img/farm-2.jpg');
+}
