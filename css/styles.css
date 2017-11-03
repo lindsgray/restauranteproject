@@ -1,61 +1,175 @@
-/*navbar styles*/
-.navbar-inverse {
-  background-color: transparent;
-  border: none;
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
+/* UNIVERSAL */
+* {
+  transition-duration: 0.2s;
 }
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: rgba(0, 0, 0, .75);
-  text-shadow: 2px 2px 2px #000;
+.min-height {
+  min-height: 600px;
 }
-
-.navbar-inverse .navbar-nav>li>a {
-  color: #fff;
+.primary-font {
+  font-family: 'Lobster', serif;
 }
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  background-color: rgba(0, 0, 0, .25);
-  color: #F8512F; /*base orange*/
+.secondary-font {
+  font-family: 'Raleway', Sans-Serif;
 }
-
-/** carousel **/
-.item {
-  height: 550px;
-  background-size: cover;
-  background-position: center;
+.white-text {
+  color: #FFFFFF;
 }
-
-#wood-bg {
-  background-image: url('../img/wood-2.jpg');
+.orange-text {
+  color: #F8512F;
 }
-
-#carousel-logo {
-  height: 200px;
+.thin-text {
+  font-weight: 300;
 }
-
-.flex-wrapper {
-  height: 100%;
-  display:flex;
-  align-items: center;
+.thick-text {
+  font-weight: 700;
 }
-
-#seating-bg {
-  background-image: url('../img/restaurant-2.jpg');
-}
-
-.carousel-caption{
-  padding-bottom: 10em;
-}
-
-.btn-warning {
+.orange-bg {
   background-color: #F8512F;
-  border: none;
+}
+/*=== nav === */
+
+
+.nav li a:hover {
+  background-color: transparent;
+}
+.navbar-default {
+   background-color: transparent;
+   border-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FFFFFF;
+  background-color: rgba(17, 17, 17, .5);
+}
+.navbar-default .navbar-nav>li>a {
+  color: #FCFCFC;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+.navbar-default .navbar-nav  li  a:hover,
+.navbar-default .navbar-nav  li  a:focus {
+    color: #F8512F;
+    background-color: rgba(17, 17, 17, .2);
 }
 
-.btn-warning:hover {
-  background-color: #D34326;
+.navbar-brand>img {
+  margin-top: -7px;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  /*height: 600px; we do not need this*/
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  padding-bottom: 140px;
+}
+/* Declare heights because of positioning of img element */
+.carousel-inner .item {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.main_img1 {
+    background-image: url(../img/wood-2.jpg);
+}
+.main_img2 {
+    background-image: url(../img/restaurant-2.jpg);
+}
+.main_img3 {
+    background-image: url(../img/farm-2.jpg);
+}
+.main_logo {
+    max-height: 300px;
+}
+.btn-primary.orange-bg {
+  border-color: transparent;
+}
+.btn-primary.orange-bg:hover {
+  background-color: #d34326;
+  border-color: transparent;
+}
+.carousel-caption p {
+  color: #F7F7F7;
+  font-size: 16px;
+}
+/*Our Story styles */
+#our-story .row{
+  margin-top: 30px;
+}
+#our-story h1{
+  font-size: 6em;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px #515151;
+}
+#our-story h3{
+  font-size: 2em;
+  margin-top: 0;
+}
+.year-text{
+  font-family: 'Playfair Display', serif;
+  font-size: 200px;
+  position: absolute;
+  z-index: -1;
+  color: rgba( 149, 147, 147, 0.2);
+}
+/*review styles*/
+#review{
+  background-image: url("../img/food_review.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#review .flex-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-container{
+  padding: 10px 15px;
+  background-color: rgba( 20, 20, 20, 0.6);
+  border-radius: 5px;
+}
+.review-container h1{
+  font-size: 5em;
+  margin-top: 0;
+  text-shadow: 1px 1px 5px #0a0a0a;
+}
+.review-container h3{
+  font-size: 2em;
+  margin-top: 0;
+  text-shadow: 1px 1px 5px #0a0a0a;
+}
+/* end of review styles */
+
+/* start of menu styles */
+#menu {
+  background-image: url("../img/black_linen.png");
 }
 
-#farm-bg {
-  background-image: url('../img/farm-2.jpg');
+#menu h1 {
+  font-size: 5em;
+}
+
+.food-item {
+  background-color: white;
+  padding: 8px 6px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, #menu .nav-tabs>li>a {
+  color: #F8512F;
+  font-weight: bold;
+}
+
+#menu .nav-tabs>li>a:hover {
+  background-color: rgba(255, 255, 255, .2);
+  border-color: transparent;
 }

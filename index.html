@@ -1,84 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Restaurante</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#"><img src="img/name-01.png" alt="" class="header-logo"></a>
-	    </div>
+<body data-spy="scroll">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/name-01.png" alt="">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#our-story">Our Story</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav> <!-- end of nav bar -->
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Our Story</a></li>
-					<li><a href="#">Review</a></li>
-					<li><a href="#">Menu</a></li>
-					<li><a href="#">Contact Us</a></li>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-
-<!--  carousel begins -->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active" id="wood-bg">
-			<div class="flex-wrapper">
-      	<img src="img/logo-01.png" alt="Cutlery Logo" class="img-responsive center-block" id="carousel-logo">
-			</div>
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item main_img1 active">
+          <!-- <div class="container"> -->
+            <div class="carousel-caption">
+              <img class="img-responsive main_logo center-block" src="img/logo-01.png" alt="">
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="item main_img2">
+            <div class="carousel-caption">
+              <h1>Eat Local.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-lg btn-primary white-text orange-bg" href="#" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="item main_img3">
+          <!-- <div class="container"> -->
+            <div class="carousel-caption">
+              <h1>From farm to table.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-lg btn-primary white-text orange-bg" href="#" role="button">Browse gallery</a>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#slideshow" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+        </div>
+        <!-- end of carousel -->
+        <!-- start about us -->
+        <div id="our-story" class="container">
+                <div class="row">
+                        <div class="col-sm-6">
+                                <h1 class="primary-font orange-text" >Our Story</h1>
+                                <h3 class="thick-text">One Man. One Dream.</h3>
+                        </div>
+                        <div class="col-sm-5 col-sm-offset-1">
+                                <h2 class="year-text thick-text">1989</h2>
+                                <p class="text-justify secondary-font thin-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eveniet ab ducimus molestias eaque laboriosam, sapiente enim quae in, illum reiciendis! Nostrum, aperiam natus? Ad, recusandae obcaecati repellat doloremque eligendi.</p>
+                                <p class="text-justify secondary-font thin-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis omnis aliquid quos ipsum deleniti ut, ducimus repudiandae corporis necessitatibus sit. Repellendus nobis esse fuga, quisquam est. Fugit eveniet vel nostrum.</p>
+                                <p class="text-justify secondary-font thin-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex explicabo eaque illo sequi quas totam veritatis accusamus facere consequatur. Explicabo accusantium accusamus ducimus non eos distinctio consequuntur in harum ullam.</p>
+                                <p class="text-justify secondary-font thin-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ipsa harum dignissimos ad, molestiae, eligendi nostrum eum in, necessitatibus commodi quos esse officia iusto nobis dolore mollitia laboriosam. Maiores, a.</p>
+                        </div>
+                </div>
+        </div>
+        <!-- end about us -->
+        <!-- start review -->
+        <div class="container-fluid" id="review">
+            <div class="row">
+                <div class="flex-wrapper min-height">
+                    <div class="col-sm-8 black-bg text-center review-container">
+                        <h1 class="primary-font orange-text thick-text">Fresno Bee</h1>
+                        <h3 class="white-text thin-text">"The freshest and the best ingredients come together to make some of the best food I have ever eaten. You can really taste the Central Valley in every bite."</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end review.... -->
+      <!--start of menu -->
+      <div id="menu">
+        <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <h1 class="primary-font white-text">Menu</h1>
+              <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified text-uppercase" role="tablist">
+                  <li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Appetizers</a></li>
+                  <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">Lunch</a></li>
+                  <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab">Dinner</a></li>
+                  <li role="presentation"><a href="#dessert" aria-controls="dessert" role="tab" data-toggle="tab">Dessert</a></li>
+                </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="appetizers">
+                  <!-- appetizer menu starts -->
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- appetizer 1 starts -->
+                      <img src="img/dip.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Appetizer 1</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- appetizer 1 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- appetizer 2 starts -->
+                      <img src="img/eggplant.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Appetizer 2</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- appetizer 2 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- appetizer 3 starts -->
+                      <img src="img/meat.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Appetizer 3</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- appetizer 3 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- appetizer 4 starts -->
+                      <img src="img/bruschetta.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Appetizer 4</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- appetizer 4 ends -->
+                    </div>
+                  <!-- appetizer menu ends -->
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="lunch">
+                  <!-- lunch menu starts -->
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- lunch 1 starts -->
+                      <img src="img/lunch1.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Lunch 1</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- lunch 1 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- lunch 2 starts -->
+                      <img src="img/lunch2.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Lunch 2</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- lunch 2 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- lunch 3 starts -->
+                      <img src="img/lunch3.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>lunch 3</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- lunch 3 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- lunch 4 starts -->
+                      <img src="img/lunch4.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Lunch 4</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- lunch 4 ends -->
+                    </div>
+                  <!-- lunch menu ends -->
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="dinner">
+                  <!-- dinner menu starts -->
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dinner 1 starts -->
+                      <img src="img/dinner1.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dinner 1</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dinner 1 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dinner 2 starts -->
+                      <img src="img/dinner2.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dinner 2</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dinner 2 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dinner 3 starts -->
+                      <img src="img/dinner3.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dinner 3</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dinner 3 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dinner 4 starts -->
+                      <img src="img/dinner4.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dinner 4</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dinner 4 ends -->
+                    </div>
+                  <!-- dinner menu ends -->
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="dessert">
+                  <!-- dessert menu starts -->
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dessert 1 starts -->
+                      <img src="img/dessert1.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dessert 1</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dessert 1 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dessert 2 starts -->
+                      <img src="img/dessert2.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dessert 2</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dessert 2 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dessert 3 starts -->
+                      <img src="img/dessert3.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dessert 3</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dessert 3 ends -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6 food-item">
+                      <!-- dessert 4 starts -->
+                      <img src="img/dessert4.jpg" alt="Dip" class="img-responsive img-thumbnail">
+                      <h3>Dessert 4</h3>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, illum dolores eos provident odit animi quos quibusdam nobis eveniet quasi praesentium dolore, voluptatibus, itaque doloremque neque libero accusamus, vel est!</p>
+                      <!-- dessert 4 ends -->
+                    </div>
+                  <!-- dessert menu ends -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="item" id="seating-bg">
-      <div class="carousel-caption">
-        <h4>Eat Local.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eveniet adipisci similique temporibus, deleniti reprehenderit. Doloremque quaerat ea dolores porro sit esse vitae, rem eum non quisquam!</p>
-				<button class="btn btn-lg btn-warning">Learn More</button>
-			</div>
-    </div>
-		<div class="item" id="farm-bg">
-      <div class="carousel-caption">
-        <h4>From Farm To Table.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eveniet adipisci similique temporibus, deleniti reprehenderit. Doloremque quaerat ea dolores porro sit esse vitae, rem eum non quisquam!</p>
-				<button class="btn btn-lg btn-warning">View Gallery</button>
-			</div>
-    </div>
-  </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-	<!-- javascript	 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <!-- javascript   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
